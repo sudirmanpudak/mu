@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ustad Usman Manompo - Official Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Container for mobile-first constraint -->
+    <div class="container">
+        <!-- Header/Top Nav (Simple) -->
+        <header style="padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
+            <div style="font-weight: bold; font-size: 1.2rem; color: var(--primary-color);">
+                <i class="fas fa-mosque"></i> Ustad Usman M.
+            </div>
+            <div>
+                <i class="far fa-bell" style="font-size: 1.2rem; color: #666;"></i>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main id="app" style="padding-bottom: 2rem;">
+
+            <!-- Hero Slider Section -->
+            <section id="hero-section" class="hero-slider">
+                <!-- Loaded via JS -->
+            </section>
+
+            <!-- Biography Snippet -->
+            <section class="section p-1" style="margin-bottom: 0;">
+                <div id="bio-snippet">
+                    <!-- Loaded via JS -->
+                </div>
+            </section>
+
+            <!-- Weekly Illustration -->
+            <section class="section p-1">
+                <div class="section-header">
+                    <h2 class="section-title">Minggu Ini</h2>
+                </div>
+                <div id="weekly-illustration-container">
+                    <!-- Loaded via JS -->
+                </div>
+            </section>
+
+            <!-- Latest News -->
+            <section class="section p-1">
+                <div class="section-header">
+                    <h2 class="section-title">Berita Terbaru</h2>
+                    <a href="artikel.html" class="view-all">Lihat Semua</a>
+                </div>
+                <div id="news-container">
+                    <!-- Loaded via JS -->
+                </div>
+            </section>
+
+            <!-- Upcoming Schedule -->
+            <section class="section p-1" style="background-color: #e8f5e9;">
+                <div class="section-header" style="border-bottom-color: var(--primary-color);">
+                    <h2 class="section-title">Jadwal Kajian</h2>
+                    <a href="jadwal.html" class="view-all">Lihat Jadwal</a>
+                </div>
+                <div id="schedule-preview">
+                    <!-- Loaded via JS -->
+                </div>
+            </section>
+
+            <!-- Gallery & Video Preview -->
+            <section class="section p-1">
+                <div class="section-header">
+                    <h2 class="section-title">Galeri & Video</h2>
+                    <a href="galeri.html" class="view-all">Lihat Semua</a>
+                </div>
+                <div id="gallery-preview">
+                    <!-- Loaded via JS -->
+                </div>
+            </section>
+
+            <!-- Quote of the Day -->
+            <section class="section p-1">
+                <div class="section-header">
+                    <h2 class="section-title">Nasehat Harian</h2>
+                    <a href="nasehat.html" class="view-all">Lihat Semua</a>
+                </div>
+                <div id="quote-container" class="text-center card" style="background: var(--primary-color); color: white;">
+                    <!-- Loaded via JS -->
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-item active">
+                <i class="fas fa-home nav-icon"></i>
+                <span class="nav-text">Home</span>
+            </a>
+            <a href="jadwal.html" class="nav-item">
+                <i class="fas fa-calendar-alt nav-icon"></i>
+                <span class="nav-text">Jadwal</span>
+            </a>
+            <div class="nav-item center-logo" id="center-logo">
+                <span style="font-weight: bold; font-size: 1.2rem;">MU</span>
+            </div>
+            <a href="nasehat.html" class="nav-item">
+                <i class="fas fa-quote-right nav-icon"></i>
+                <span class="nav-text">Nasehat</span>
+            </a>
+            <a href="contact.html" class="nav-item">
+                <i class="fas fa-envelope nav-icon"></i>
+                <span class="nav-text">Contact</span>
+            </a>
+        </nav>
+
+        <!-- Full Menu Modal (triggered by center logo) -->
+        <div class="full-menu-modal" id="full-menu">
+            <div class="menu-grid">
+                <a href="biografi.html" class="menu-item">
+                    <i class="fas fa-user mb-1"></i><br>Biografi
+                </a>
+                <a href="artikel.html" class="menu-item">
+                    <i class="fas fa-newspaper mb-1"></i><br>Artikel
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fas fa-hand-holding-heart mb-1"></i><br>Donasi
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fas fa-question-circle mb-1"></i><br>FAQ
+                </a>
+                <a href="galeri.html" class="menu-item">
+                    <i class="fas fa-images mb-1"></i><br>Galeri
+                </a>
+                <a href="video.html" class="menu-item">
+                    <i class="fas fa-video mb-1"></i><br>Video
+                </a>
+            </div>
+            <div class="close-menu" id="close-menu">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+
+        <!-- Startup Popup -->
+        <div class="popup-overlay" id="startup-popup">
+            <div class="popup-content">
+                <div class="close-popup" id="close-popup">&times;</div>
+                <img src="https://via.placeholder.com/300x300/006400/FFFFFF?text=Promo+Buku+Baru" alt="Promo" style="margin: 0 auto 1rem; border-radius: 8px;">
+                <h3>Buku Terbaru!</h3>
+                <p>Dapatkan buku "Menjemput Hidayah" sekarang juga. Diskon 20% untuk pembelian hari ini.</p>
+                <button class="btn mt-1" id="popup-cta">Lihat Detail</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

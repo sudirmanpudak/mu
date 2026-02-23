@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Hubungi Kami - Ustad Usman Manompo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header style="padding: 1rem; display: flex; align-items: center; border-bottom: 1px solid #eee;">
+            <a href="index.html" style="margin-right: 1rem; color: #666;"><i class="fas fa-arrow-left"></i></a>
+            <h1 style="font-size: 1.2rem; margin: 0; color: var(--primary-color);">Hubungi Kami</h1>
+        </header>
+
+        <!-- Main Content -->
+        <main id="app" style="padding: 1rem; padding-bottom: 6rem;">
+
+            <div class="card p-1">
+                <h2 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Informasi Kontak</h2>
+                <p style="margin-bottom: 0.5rem;"><i class="fas fa-envelope" style="color: var(--primary-color); width: 20px;"></i> admin@usmanmanompo.com</p>
+                <p style="margin-bottom: 0.5rem;"><i class="fab fa-whatsapp" style="color: var(--primary-color); width: 20px;"></i> +62 812-3456-7890</p>
+                <p style="margin-bottom: 0.5rem;"><i class="fas fa-map-marker-alt" style="color: var(--primary-color); width: 20px;"></i> Jakarta, Indonesia</p>
+            </div>
+
+            <div class="card p-1 mt-1">
+                <h2 style="font-size: 1.1rem; margin-bottom: 1rem;">Undang Ustad</h2>
+                <form onsubmit="event.preventDefault(); alert('Pesan Anda telah terkirim!');">
+                    <div style="margin-bottom: 1rem;">
+                        <label for="name" style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">Nama Lengkap / Instansi</label>
+                        <input type="text" id="name" style="width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 8px;" placeholder="Masukkan nama..." required>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="email" style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">Email</label>
+                        <input type="email" id="email" style="width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 8px;" placeholder="Masukkan email..." required>
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="message" style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem;">Pesan / Keperluan</label>
+                        <textarea id="message" rows="4" style="width: 100%; padding: 0.8rem; border: 1px solid #ccc; border-radius: 8px;" placeholder="Tuliskan pesan Anda..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%;">Kirim Pesan</button>
+                </form>
+            </div>
+
+        </main>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-item">
+                <i class="fas fa-home nav-icon"></i>
+                <span class="nav-text">Home</span>
+            </a>
+            <a href="jadwal.html" class="nav-item">
+                <i class="fas fa-calendar-alt nav-icon"></i>
+                <span class="nav-text">Jadwal</span>
+            </a>
+            <div class="nav-item center-logo" id="center-logo">
+                <span style="font-weight: bold; font-size: 1.2rem;">MU</span>
+            </div>
+            <a href="nasehat.html" class="nav-item">
+                <i class="fas fa-quote-right nav-icon"></i>
+                <span class="nav-text">Nasehat</span>
+            </a>
+            <a href="contact.html" class="nav-item active">
+                <i class="fas fa-envelope nav-icon"></i>
+                <span class="nav-text">Contact</span>
+            </a>
+        </nav>
+
+        <!-- Full Menu Modal (triggered by center logo) -->
+        <div class="full-menu-modal" id="full-menu">
+            <div class="menu-grid">
+                <a href="biografi.html" class="menu-item">
+                    <i class="fas fa-user mb-1"></i><br>Biografi
+                </a>
+                <a href="artikel.html" class="menu-item">
+                    <i class="fas fa-newspaper mb-1"></i><br>Artikel
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fas fa-hand-holding-heart mb-1"></i><br>Donasi
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fas fa-question-circle mb-1"></i><br>FAQ
+                </a>
+                <a href="galeri.html" class="menu-item">
+                    <i class="fas fa-images mb-1"></i><br>Galeri
+                </a>
+                <a href="video.html" class="menu-item">
+                    <i class="fas fa-video mb-1"></i><br>Video
+                </a>
+            </div>
+            <div class="close-menu" id="close-menu">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

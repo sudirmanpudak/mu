@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Galeri Foto - Ustad Usman Manompo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header style="padding: 1rem; display: flex; align-items: center; border-bottom: 1px solid #eee;">
+            <a href="index.html" style="margin-right: 1rem; color: #666;"><i class="fas fa-arrow-left"></i></a>
+            <h1 style="font-size: 1.2rem; margin: 0; color: var(--primary-color);">Galeri Foto</h1>
+        </header>
+
+        <!-- Main Content -->
+        <main id="app" style="padding: 1rem; padding-bottom: 6rem;">
+            <div id="all-gallery-container" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+                <!-- Loaded via JS -->
+            </div>
+        </main>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <a href="index.html" class="nav-item">
+                <i class="fas fa-home nav-icon"></i>
+                <span class="nav-text">Home</span>
+            </a>
+            <a href="jadwal.html" class="nav-item">
+                <i class="fas fa-calendar-alt nav-icon"></i>
+                <span class="nav-text">Jadwal</span>
+            </a>
+            <div class="nav-item center-logo" id="center-logo">
+                <span style="font-weight: bold; font-size: 1.2rem;">MU</span>
+            </div>
+            <a href="nasehat.html" class="nav-item">
+                <i class="fas fa-quote-right nav-icon"></i>
+                <span class="nav-text">Nasehat</span>
+            </a>
+            <a href="contact.html" class="nav-item">
+                <i class="fas fa-envelope nav-icon"></i>
+                <span class="nav-text">Contact</span>
+            </a>
+        </nav>
+
+        <!-- Full Menu Modal (triggered by center logo) -->
+        <div class="full-menu-modal" id="full-menu">
+            <div class="menu-grid">
+                <a href="biografi.html" class="menu-item">
+                    <i class="fas fa-user mb-1"></i><br>Biografi
+                </a>
+                <a href="artikel.html" class="menu-item">
+                    <i class="fas fa-newspaper mb-1"></i><br>Artikel
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fas fa-hand-holding-heart mb-1"></i><br>Donasi
+                </a>
+                <a href="#" class="menu-item">
+                    <i class="fas fa-question-circle mb-1"></i><br>FAQ
+                </a>
+                <a href="galeri.html" class="menu-item">
+                    <i class="fas fa-images mb-1"></i><br>Galeri
+                </a>
+                <a href="video.html" class="menu-item">
+                    <i class="fas fa-video mb-1"></i><br>Video
+                </a>
+            </div>
+            <div class="close-menu" id="close-menu">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
