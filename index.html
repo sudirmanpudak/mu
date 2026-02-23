@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Ustad Usman Manompo - Official Website</title>
+    <title>Manompo Usman - Official Website</title>
     <link rel="stylesheet" href="css/style.css">
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -15,72 +15,36 @@
         <!-- Header/Top Nav (Simple) -->
         <header style="padding: 1rem; display: flex; justify-content: space-between; align-items: center;">
             <div style="font-weight: bold; font-size: 1.2rem; color: var(--primary-color);">
-                <i class="fas fa-mosque"></i> Ustad Usman M.
-            </div>
-            <div>
-                <i class="far fa-bell" style="font-size: 1.2rem; color: #666;"></i>
+                <i class="fas fa-mosque"></i> Manompo Usman
             </div>
         </header>
 
         <!-- Main Content Area -->
         <main id="app" style="padding-bottom: 2rem;">
 
-            <!-- Hero Slider Section -->
-            <section id="hero-section" class="hero-slider">
-                <!-- Loaded via JS -->
-            </section>
-
-            <!-- Biography Snippet -->
-            <section class="section p-1" style="margin-bottom: 0;">
-                <div id="bio-snippet">
+            <!-- Hero Section (Banner & Schedule) -->
+            <section style="position: relative; margin-bottom: 2rem;">
+                <div id="hero-section" class="hero-slider">
                     <!-- Loaded via JS -->
+                </div>
+                <!-- Schedule Overlay -->
+                <div id="hero-schedule" style="margin-top: -30px; position: relative; z-index: 10; padding: 0 1rem;">
+                     <!-- Loaded via JS -->
                 </div>
             </section>
 
-            <!-- Weekly Illustration -->
+            <!-- Video Section -->
             <section class="section p-1">
                 <div class="section-header">
-                    <h2 class="section-title">Minggu Ini</h2>
+                    <h2 class="section-title">Kajian Terbaru</h2>
+                    <a href="video.html" class="view-all">Lihat Semua</a>
                 </div>
-                <div id="weekly-illustration-container">
+                <div id="video-featured-container">
                     <!-- Loaded via JS -->
                 </div>
             </section>
 
-            <!-- Latest News -->
-            <section class="section p-1">
-                <div class="section-header">
-                    <h2 class="section-title">Berita Terbaru</h2>
-                    <a href="artikel.html" class="view-all">Lihat Semua</a>
-                </div>
-                <div id="news-container">
-                    <!-- Loaded via JS -->
-                </div>
-            </section>
-
-            <!-- Upcoming Schedule -->
-            <section class="section p-1" style="background-color: #e8f5e9;">
-                <div class="section-header" style="border-bottom-color: var(--primary-color);">
-                    <h2 class="section-title">Jadwal Kajian</h2>
-                    <a href="jadwal.html" class="view-all">Lihat Jadwal</a>
-                </div>
-                <div id="schedule-preview">
-                    <!-- Loaded via JS -->
-                </div>
-            </section>
-
-            <!-- Gallery & Video Preview -->
-            <section class="section p-1">
-                <div class="section-header">
-                    <h2 class="section-title">Galeri & Video</h2>
-                    <a href="galeri.html" class="view-all">Lihat Semua</a>
-                </div>
-                <div id="gallery-preview">
-                    <!-- Loaded via JS -->
-                </div>
-            </section>
-
-            <!-- Quote of the Day -->
+            <!-- Quote of the Day (Nasehat) -->
             <section class="section p-1">
                 <div class="section-header">
                     <h2 class="section-title">Nasehat Harian</h2>
@@ -91,7 +55,39 @@
                 </div>
             </section>
 
-        </main>
+            <!-- Articles (Artikel) -->
+            <section class="section p-1">
+                <div class="section-header">
+                    <h2 class="section-title">Artikel Pilihan</h2>
+                    <a href="artikel.html" class="view-all">Lihat Semua</a>
+                </div>
+                <div id="news-container">
+                    <!-- Loaded via JS -->
+                </div>
+            </section>
+
+            <!-- Gallery (Minggu Ini) -->
+            <section class="section p-1">
+                <div class="section-header">
+                    <h2 class="section-title">Galeri Mingguan</h2>
+                    <a href="galeri.html" class="view-all">Lihat Galeri</a>
+                </div>
+                <div id="gallery-carousel-container" style="display: flex; overflow-x: auto; gap: 1rem; padding-bottom: 1rem; scrollbar-width: none;">
+                    <!-- Loaded via JS -->
+                </div>
+            </section>
+
+            <!-- Karya Tulis -->
+            <section class="section p-1">
+                <div class="section-header">
+                    <h2 class="section-title">Karya Tulis</h2>
+                </div>
+                <div id="books-container" style="display: flex; overflow-x: auto; gap: 1rem; padding-bottom: 1rem; scrollbar-width: none;">
+                    <!-- Loaded via JS -->
+                </div>
+            </section>
+
+        <footer id="main-footer"></footer></main>
 
         <!-- Bottom Navigation -->
         <nav class="bottom-nav">
@@ -138,16 +134,13 @@
                     <i class="fas fa-video mb-1"></i><br>Video
                 </a>
             </div>
-            <div class="close-menu" id="close-menu">
-                <i class="fas fa-times"></i>
-            </div>
         </div>
 
         <!-- Startup Popup -->
         <div class="popup-overlay" id="startup-popup">
             <div class="popup-content">
                 <div class="close-popup" id="close-popup">&times;</div>
-                <img src="https://via.placeholder.com/300x300/006400/FFFFFF?text=Promo+Buku+Baru" alt="Promo" style="margin: 0 auto 1rem; border-radius: 8px;">
+                <img src="https://picsum.photos/300/300?grayscale" alt="Promo" style="margin: 0 auto 1rem; border-radius: 8px;">
                 <h3>Buku Terbaru!</h3>
                 <p>Dapatkan buku "Menjemput Hidayah" sekarang juga. Diskon 20% untuk pembelian hari ini.</p>
                 <button class="btn mt-1" id="popup-cta">Lihat Detail</button>

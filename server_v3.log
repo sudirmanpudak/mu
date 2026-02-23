@@ -1,0 +1,13 @@
+127.0.0.1 - - [23/Feb/2026 08:04:04] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [23/Feb/2026 08:04:04] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Feb/2026 08:04:04] "GET /js/data.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Feb/2026 08:04:04] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Feb/2026 08:06:11] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [23/Feb/2026 08:06:11] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Feb/2026 08:06:11] "GET /js/data.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Feb/2026 08:06:11] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Feb/2026 08:07:08] "GET /index.html HTTP/1.1" 200 -
+127.0.0.1 - - [23/Feb/2026 08:07:08] "GET /css/style.css HTTP/1.1" 200 -
+127.0.0.1 - - [23/Feb/2026 08:07:08] "GET /js/data.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Feb/2026 08:07:08] "GET /js/main.js HTTP/1.1" 200 -
+127.0.0.1 - - [23/Feb/2026 08:07:08] "GET /index.html HTTP/1.1" 304 -
